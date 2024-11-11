@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="container py-5">
+    <h1 class="text-center mb-5" id="start">Product Page</h1>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            @for (product of products; track product.id) {
+                <div class="col mb-4">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" 
+                             src="{{product.category.image}}" 
+                             alt="{{product.title}}"
+                             style="object-fit: cover; height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{product.title}}</h5>
+                            <a (click) = "onClickHandler(product)" class="btn btn-primary mt-auto w-100">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

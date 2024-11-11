@@ -1,0 +1,33 @@
+body {
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 10%;
+}
+
+.left-side img {
+    max-width: 80vh;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.left-side, .right-side {
+    padding: 15px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.product-image {
+    border-radius: 10%;
+}
+
+#add-to-cart {
+    margin-top: 2rem;
+}
